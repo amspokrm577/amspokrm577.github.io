@@ -1,6 +1,8 @@
-p {
+/* p {
+    background-image: "images/logo.jpg"
+    color: rbg(255, 165, 0);
 
-};
+}; */
 
 ul {
 
@@ -9,6 +11,7 @@ ul {
 .grid-container {
     opacity: 0.8;
     font-size: large;
+    position: sticky;
 
 };
 
@@ -25,4 +28,21 @@ ul {
 
 .grid-item:hover {
     display: block;
+}
+
+#btn-1 {
+
+};
+
+#test {
+
+};
+
+.test-container {
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: medium;
+    color: powderblue;
+
 }
