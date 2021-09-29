@@ -4,9 +4,20 @@
 
 }; */
 
+
+/* 
+Keep adding some fade in/out effects to css
+Look to adding the marque for the stock market tickers.  */
+
 ul {
 
 };
+
+.header {
+    display: block;
+    justify-content: space-around;
+
+}
 
 .grid-container {
     opacity: 0.8;
@@ -38,6 +49,32 @@ ul {
 
 };
 
+
+
+/*
+**
+*  This is some test css code for communicating with
+*  JavaScript about opening up dynamic css for, specifically, 
+*  classes in the tag of a clickable item in the display 
+*  viewport. If this comes in the form of block/inline elements
+*  with their own sizing, a css media query should be able to be
+*  responsive. 
+*  As probably seen above this comment ^ there should be a fade-in/
+                                       |   fade-out effect when tags
+                                       ^      are being displayed.
+*
+* MYNAME
+* DATE
+
+*/
+
+#myDIV {
+    display: flex;
+
+};
+
+
+
 .test-container {
     display: none;
     justify-content: center;
@@ -45,4 +82,18 @@ ul {
     font-size: medium;
     color: powderblue;
 
+}
+
+#color-changer {
+  display: inline-flex;
+};
+
+.test-inner {
+
+};
+
+.ele {
+    opacity: 1;
+    transition: opacity 2s linear;
+    display:none;
 }
