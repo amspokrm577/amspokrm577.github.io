@@ -23,6 +23,6 @@ ul {
 
 };
 
-.grid-item : :hover{
+.grid-item:hover {
     display: block;
 }
