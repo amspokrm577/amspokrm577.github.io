@@ -1,0 +1,28 @@
+p {
+
+};
+
+ul {
+
+};
+
+.grid-container {
+    opacity: 0.8;
+    font-size: large;
+
+};
+
+
+#label {
+
+};
+
+.grid-item {
+    font-size: medium;
+    display: inline-block;
+
+};
+
+.grid-item : :hover{
+    display: block;
+}
