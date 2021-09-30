@@ -11,6 +11,36 @@
     <!-- For a favicon  -->
     <title>Document</title>
 
+    <div id="nav">  
+        <div id="logo">
+            <a href="Home.html"><img src="Title3.JPG" alt="Dane's bakery"></a>
+        </div>
+        <div id="navEl">
+          <div class="flex-container">
+              <div id="flex-child">
+                  <a class="hovered" href="AboutUs.html">About Us</a>
+                </div>
+                <div id="flex-child">
+                    <a class="hovered" href="AboutUs.html">Products</a>
+                  </div>
+                  <div id="flex-child">
+                    <a class="hovered" href="AboutUs.html">Checkout</a>
+                  </div>
+                  <div id="flex-child">
+                    <a href="Checkout.html" target="_blank">Checkout</a>
+                  </div>
+                  <div id="flex-child">
+                    <a class="hovered" href="AboutUs.html">About Us</a>
+                  </div>
+                  <div id="flex-child">
+                    <button id="cart" style="background-color: #f5f1e1; border: none;">
+                        <i class="fa fa-shopping-cart" style="font-size:24px"></i>
+                    </button>
+                  </div>     
+          </div>    
+        </div>
+    </div>
+
     <style>
 
         .container {
@@ -56,6 +86,10 @@
             .container {
                 display: inline-block;
             }
+
+            #navEl {
+                display: none;
+            }
         }
 
     </style>
@@ -68,10 +102,12 @@
       <div class="bar2"></div>
       <div class="bar3"></div>
     </div>
-    
+    <div class="#nav-bar"></div>
     <script>
     function myFunction(x) {
       x.classList.toggle("change");
+      let nava = docuemt.querySelector(".flex-container")
+      x.appendChild(nava);
     }
     </script>
 </body>
