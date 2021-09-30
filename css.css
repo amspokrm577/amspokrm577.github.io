@@ -10,8 +10,15 @@ Keep adding some fade in/out effects to css
 Look to adding the marque for the stock market tickers.  */
 
 ul {
-
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
 };
+
+li {
+  display: inline;
+  justify-content: space-between;
+}
 
 .header {
     display: block;

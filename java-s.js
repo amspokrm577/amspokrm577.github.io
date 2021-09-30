@@ -79,9 +79,8 @@ Sincerely,
 
 Rossy
 `;
-// ${title} and ${image.path} are like environment variables
-// Define the innerhtml for a certain div identified by a class or ID
-// This is the behavior for a user event.
+// ${title} and ${image.path} ways to format a string.
+
 let container = document.querySelector(".test-inner");
 
 
@@ -120,3 +119,6 @@ function text_child_test () {
         console.log(myElement.children[i].tagName);
       }
   };
+
+  // Stop page from scrolling.
+  // event.preventDefault();
