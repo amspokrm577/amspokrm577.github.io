@@ -108,7 +108,26 @@
       x.classList.toggle("change");
       let nava = document.querySelector(".flex-container")
       console.log(nava);
-      x.appendChild(nava);
+      make_or_erase (x, nava);
+    //   x.appendChild(nava);
+    }
+
+    function make_or_erase (val1, va2)
+    {
+        console.log (val1);
+        console.log(va2);
+        // check if divs have already been created after the bars
+        if (val1.childElementCount > 3)
+          {
+            if (va2.style.display == "none")
+            {
+                va2.style.display = "flex";
+            }
+            else {
+                va2.style.display = "none";
+            }
+          }
+          val1.appendChild(va2); 
     }
     </script>
 </body>
