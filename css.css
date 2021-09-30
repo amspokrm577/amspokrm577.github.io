@@ -9,11 +9,18 @@
 Keep adding some fade in/out effects to css
 Look to adding the marque for the stock market tickers.  */
 
+#logo {
+  float: left;
+  height: 100%;
+  overflow: hidden;
+}
+
 .flex-container {
   display: flex;
   justify-content: center;
-  position: sticky;
-
+  position: relative;
+  background-color: green;
+  z-index: 1071;
 }
 
 #flex-child {
@@ -38,11 +45,6 @@ Look to adding the marque for the stock market tickers.  */
 
 };
 
-
-#label {
-
-};
-
 .grid-item {
     font-size: medium;
     display: inline-block;
@@ -53,32 +55,23 @@ Look to adding the marque for the stock market tickers.  */
     display: block;
 }
 
-#btn-1 {
+li {
+  list-style: none;
+  display: inline-block;
+  padding-right: 40px;
+}
+ 
+li a {
+  text-decoration: none;
+  font-size: large;
+  color: black;
+}
+a:hover {
+  /* background:gray; */
+  opacity: 0.2;
+  transition: .5s;
+}
 
-};
-
-#test {
-
-};
-
-
-
-/*
-**
-*  This is some test css code for communicating with
-*  JavaScript about opening up dynamic css for, specifically, 
-*  classes in the tag of a clickable item in the display 
-*  viewport. If this comes in the form of block/inline elements
-*  with their own sizing, a css media query should be able to be
-*  responsive. 
-*  As probably seen above this comment ^ there should be a fade-in/
-                                       |   fade-out effect when tags
-                                       ^      are being displayed.
-*
-* MYNAME
-* DATE
-
-*/
 
 #myDIV {
     display: flex;
@@ -88,6 +81,11 @@ Look to adding the marque for the stock market tickers.  */
 #nav #navEl {
     float: right;
     padding-top: 40px;
+    background-color: green;
+  }
+
+  #navEl {
+    margin-top: 2.5em;
   }
 
 .test-container {
@@ -103,9 +101,6 @@ Look to adding the marque for the stock market tickers.  */
   display: inline-flex;
 };
 
-.test-inner {
-
-};
 
 .ele {
     opacity: 1;
@@ -113,35 +108,114 @@ Look to adding the marque for the stock market tickers.  */
     display:none;
 }
 
-
-@media screen and (max-width: 1030px) {
-    li {
-      padding-right: 10px;
-    }
+  #maindiv{
+    background-color: black;
+    overflow: hidden;
+    white-space: wrap;
   }
-   
-  @media screen and (max-width: 903px) {
-    #nav {
-      height: 300px;
-      display: block;
+  
+  #div1 {
+    display: inline-block;
+    animation: marquee 10s linear infinite;
+  }
+  
+  /* #div2 {
+    display: inline-block;
+    animation: marquee2 10s linear infinite;
+    animation-delay: 5s;
+  } */
+  
+  @keyframes marquee {
+    from {
+      transform: translateX(250%);
     }
-    #logo{
-      height: 150px;
-      margin: 0 auto;
-      margin-left: 12%;
-    }
-    #navEl {
-      overflow: hidden;
-      width: 100%;
-      background-color: #f5f1e1;
-      padding-left: 20px;
-      padding-right: 20px;
-    }
-   
-    .myBox {
-      margin-top: 150px;
-      display: inline-block;
+    to {
+      transform: translateX(-100%);
     }
   }
   
+  @keyframes marquee2 {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(-250%);
+    }
+  }
+
+
+
+  .space-bet {
+    padding-right: 10px;
+    padding-left: 10px;
+    color: white;
+  }
+
+  span {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+
+  .para1, .para2, .para3 {
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    opacity: 0.8;
+    background-position: center;
+}
+.para1 {
+    background-image: url('BakeryBg1.jpg');
+    min-height: 100%;
+}
+
+.para2 {
+    background-image: url('img2.jpg');
+    min-height: 100%;
+}
+
+.para3 {
+    background-image: url('img3.jpg');
+    min-height: 100%;
+}
+#nav {
+    display: inline-flex;
+    justify-content: space-between;
+    top: 28px;
+    left: 0px;
+    width: 100%;
+    height: 150px;
+    padding: 15px;
+    background-color: #00ffff;
+    position: fixed;
+    z-index: 500;
+}
+@media screen and (max-width: 1030px) {
+    li {padding-right: 10px;}
+}
+
+@media screen and (max-width: 903px) {
+    #nav {
+        height: 300px;
+        display: block;
+    }
+    #logo {
+        height: 150px;
+        margin: 0 auto;
+        margin-left: 12%;
+    }
+    #navEl {
+        overflow: hidden;
+        width: 100%;
+        background-color: #f5f1e1;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .myBox {
+        margin-top: 150px;
+        display: inline-block;
+    }
+}
+
+
   

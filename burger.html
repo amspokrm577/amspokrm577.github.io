@@ -12,9 +12,9 @@
     <title>Document</title>
 
     <div id="nav">  
-        <div id="logo">
+        <!-- <div id="logo">
             <a href="Home.html"><img src="Title3.JPG" alt="Dane's bakery"></a>
-        </div>
+        </div> -->
         <div id="navEl">
           <div class="flex-container">
               <div id="flex-child">
@@ -57,25 +57,8 @@
             transition: 0.4s;
         }
 
-        /* .burger-bar {
-            width: 40px;
-            height: 10px;
-            color: rgb(255, 266, 230);
-            margin: 10px;
-        } */
-
-        .change .bar1 {
-            -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-            transform: rotate(-45deg) translate(-9px, 6px);
-        }
-
-        .change .bar2 {
-            opacity: 0;
-        }
-
-        .change .bar3 {
-            -webkit-transform: rotate(45deg) translate(-8px, -8px);
-            transform: rotate(45deg) translate(-8px, -8px);
+        .responder {
+            display: none;
         }
 
         @media screen and (max-width: 768px) {
@@ -85,6 +68,10 @@
 
             .container {
                 display: inline-block;
+            }
+
+            .responder {
+                display: block;
             }
 
             #navEl {
@@ -97,41 +84,19 @@
 <body>
     
     <p>Click on the Menu Icon to transform it to "X":</p>
+  <div class="reponder">
     <div class="container" onclick="myFunction(this)">
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
-    </div>
-    <div class="#nav-bar"></div>
-    <script>
-    function myFunction(x) {
-      x.classList.toggle("change");
-      let nava = document.querySelector(".flex-container")
-      console.log(nava);
-      make_or_erase (x, nava);
-    //   x.appendChild(nava);
-    }
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <div class="nav-bar">
 
-    function make_or_erase (val1, va2)
-    {
-        console.log (val1);
-        console.log(va2.style);
-        // check if divs have already been created after the bars
-        if (val1.childElementCount > 3)
-          {
-            if (va2.style.display == "none")
-            {
-                va2.style.display = "";
-            }
-            else {
-                va2.style.display = "none";
-            }
-          }
-        else {
-            val1.appendChild(va2); 
-        }
-          
-    }
-    </script>
+      </div>
+  </div>  
+    
+    
+    
+    <script src="javas-s.js"></script>
 </body>
 </html>
