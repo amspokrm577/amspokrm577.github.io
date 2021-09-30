@@ -7,27 +7,45 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <!-- <link rel="shortcut icon" type="image/jpg" href="Favicon_Image_Location"/> -->
+    <!-- For a favicon  -->
     <title>Document</title>
 
     <style>
 
         .container {
-            display: flex;
-            justify-content: center;
-            background-color: aqua;
-        }
-
-        .burger {
             display: none;
+            cursor: pointer;
+            justify-content: center;
         }
 
-        .burger div {
+        .bar1, .bar2, .bar3 {
+            width: 35px;
+            height: 5px;
+            background-color: #333;
+            margin: 6px 0;
+            transition: 0.4s;
+        }
+
+        /* .burger-bar {
             width: 40px;
             height: 10px;
             color: rgb(255, 266, 230);
             margin: 10px;
-            
+        } */
 
+        .change .bar1 {
+            -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+            transform: rotate(-45deg) translate(-9px, 6px);
+        }
+
+        .change .bar2 {
+            opacity: 0;
+        }
+
+        .change .bar3 {
+            -webkit-transform: rotate(45deg) translate(-8px, -8px);
+            transform: rotate(45deg) translate(-8px, -8px);
         }
 
         @media screen and (max-width: 768px) {
@@ -35,8 +53,8 @@
                 overflow-x: hidden;
             }
 
-            .burger {
-                display: block;
+            .container {
+                display: inline-block;
             }
         }
 
@@ -44,8 +62,17 @@
 </head>
 <body>
     
-<script>
-
+    <p>Click on the Menu Icon to transform it to "X":</p>
+    <div class="container" onclick="myFunction(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+    
+    <script>
+    function myFunction(x) {
+      x.classList.toggle("change");
+    }
     </script>
 </body>
 </html>
