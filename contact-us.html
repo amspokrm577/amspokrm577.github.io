@@ -13,6 +13,22 @@
         <link rel="icon" type="image/png" href="Images/matt.png" />
         <link rel="stylesheet" href="css.css">
         <title>Stonks on Stonks</title>
+
+        <style>
+            .loc {
+                border-radius: 5px; 
+                border-color: black;
+                margin: 40px;
+                padding: 30px;
+                box-shadow: 5px 10px #888888;
+                border: 1px solid black;
+ 
+            }
+            .loc > button {
+                margin: auto;
+            }
+
+        </style>
         
     </head>
     <body>
@@ -64,12 +80,28 @@
         </div>
       <div></div>
 
-        <!-- Body shit goes here -->
-        <section style="margin-top: 300px;">
-            <form action="input"></form>
+        <section style="margin-top: 300px; text-align: center;">
+            <h1>
+                Our Locations:
+            </h1>
+            <div class="contain" style="display: grid; grid-template-columns: auto auto">
+                <div class="loc">
+                    <p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3125.6890660642202!2d-78.87753568459621!3d38.42554997964634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b492fb28c349a7%3A0xe4dac32f2e6a2740!2s1348%20Hunters%20Rd%2C%20Harrisonburg%2C%20VA%2022801!5e0!3m2!1sen!2sus!4v1607325396346!5m2!1sen!2sus"
+                         width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </p>
+                    <button class="btn btn-primary">Reach Out</button>
+                  </div>
+         
+                  <div class="loc">
+                    <p>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3126.0901669031905!2d-78.87570528459649!3d38.41628107964778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b492f84af53cc5%3A0x75a199101685d8b7!2s1073%20Lois%20Ln%2C%20Harrisonburg%2C%20VA%2022801!5e0!3m2!1sen!2sus!4v1607670799660!5m2!1sen!2sus" 
+                      width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </p>
+                      <button class="btn btn-primary">Reach out</button>
+                  </div>
+            </div>
         </section>
-
-
 
       <script src="https://kit.fontawesome.com/yourcode.js"></script>
       <script src="java-s.js"></script>
