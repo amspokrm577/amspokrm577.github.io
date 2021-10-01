@@ -232,7 +232,9 @@ a:hover {
     position: fixed;
     z-index: 500;
 }
-
+p {
+  font-family: sans-serif;
+}
 
 @media screen and (max-width: 1030px) {
     li {padding-right: 10px;}

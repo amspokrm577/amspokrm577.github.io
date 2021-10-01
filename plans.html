@@ -11,14 +11,15 @@
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css.css">
+        <link rel="icon" type="image/png" href="Images/matt.png" />
         <title>Stonks on Stonks</title>
 
         <style>
             #shadow-grid {
                 display: flex;
                 flex-direction: row;
-                justify-content: flex-start;
-                background-color: powderblue;
+                justify-content: space-between;
+                /* background-color: powderblue; */
                 position: relative;
                 top: 300px;
             }
@@ -75,47 +76,31 @@
                     <li><a href="contact-us.html">Contact Us</a></li>
                     <li><a href="plans.html" target="_blank">Plans</a></li>         
                   </ul>
-              <!-- <div class="flex-container">
-                  <div id="flex-child">
-                    <a href="Home.html"><img src="Title3.JPG" alt="Dane's bakery"></a>
-                   </div>
-                  <div id="flex-child">
-                      <a class="hovered" href="AboutUs.html">About Us</a>
-                    </div>
-                    <div id="flex-child">
-                        <a class="hovered" href="AboutUs.html">Products</a>
-                      </div>
-                      <div id="flex-child">
-                        <a class="hovered" href="AboutUs.html">Checkout</a>
-                      </div>
-                      <div id="flex-child">
-                        <a href="Checkout.html" target="_blank">Checkout</a>
-                      </div>
-                      <div id="flex-child">
-                        <a class="hovered" href="AboutUs.html">About Us</a>
-                      </div>   
-              </div>     -->
-              <!-- <div class="responder" style="display:none">
-                <div class="container" hover="myFunction(this)">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                  </div> -->
-                  <!-- Should create a dropdown when the user clicks-->
+              
                   <div class="nav-bar"></div>
               </div>
             </div>
         </div>
       <div></div>
 
-        <!-- Body shit goes here -->
         <div id="shadow-grid">
-            <span id="shadow-box"></div>
-            <span id="shadow-box"></div>
-            <span id="shadow-box"></div>
+            <div id="shadow-box"></div>
+            <div id="shadow-box"></div>
+            <div id="shadow-box"></div>
         </div>
 
-
+        <div>
+            <form action="/action_page.php">
+                <label for="cars">Choose a car:</label>
+                <select id="cars" name="cars">
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Saab</option>
+                  <option value="fiat">Fiat</option>
+                  <option value="audi">Audi</option>
+                </select>
+                <input type="submit">
+              </form>
+        </div>
 
       <script src="https://kit.fontawesome.com/yourcode.js"></script>
       <script src="java-s.js"></script>
