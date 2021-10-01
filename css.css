@@ -9,6 +9,9 @@
 Keep adding some fade in/out effects to css
 Look to adding the marque for the stock market tickers.  */
 
+.ptext {
+  height: 500px;
+}
 .container {
   display: none;
   cursor: pointer;
@@ -212,12 +215,13 @@ a:hover {
 
 @media screen and (max-width: 1030px) {
     li {padding-right: 10px;}
-    .responder {display:block;}
-    .list-navs {display:none;}
+    /* .responder {display:block;}
+    .list-navs {display:none;} */
+    #logo {margin-right: 10%;}
 
 }
 
-@media screen and (max-width: 903px) {
+@media screen and (max-width: 950px) {
     #nav {
         height: 300px;
         display: block;
@@ -225,21 +229,28 @@ a:hover {
     #logo {
         height: 150px;
         margin: 0 auto;
-        margin-left: 12%;
+        width: 100%;
+        margin-left: 20%;
     }
     #navEl {
         overflow: hidden;
         width: 100%;
-        background-color: #f5f1e1;
+        background-color: #00ffff;
         padding-left: 20px;
         padding-right: 20px;
     }
 
-    .myBox {
+    /* .myBox {
         margin-top: 150px;
         display: inline-block;
-    }
+    } */
 }
+  @media screen and (max-width: 550px)
+  {
+    #logo {
+      margin-left: 10%;
+    }
+  }
 
 
   
