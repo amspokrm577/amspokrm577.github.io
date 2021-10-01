@@ -25,11 +25,25 @@
             }
 
             #shadow-box {
+                text-align: center;
                 border: 1px solid;
                 box-shadow: 5px 10px #888888;
                 height: 500px;
                 width: 30%;
                 margin: 10px;
+            }
+            #user-input {
+                justify-content: center;
+                position: relative;
+                top: 800px;
+
+            }
+            #lister {
+                display: block;
+                list-style: circle;
+            }
+            .list {
+                display: block;
             }
         </style>
         
@@ -84,19 +98,61 @@
       <div></div>
 
         <div id="shadow-grid">
-            <div id="shadow-box"></div>
-            <div id="shadow-box"></div>
-            <div id="shadow-box"></div>
+            <div id="shadow-box">
+                <h3>
+                    Basic
+                </h3>
+                <ul id="lister">
+                    <div id="list">
+                        <li>Basic membership</li>
+                        <li>5 Hr/Wk phone service</li>
+                        <li>Access to website membership tools</li>
+                    </div>
+                    
+                </ul>
+            </div>
+            <div id="shadow-box">
+                <h3>
+                    Bundle
+                </h3>
+                <ul id="lister">
+                    <div id="list">
+                        <li>Unlocked features</li>
+                        <li>10 HR/WK phone service</li>
+                        <li>Access to ambassador club</li>
+                        <li>Real-time advising</li>
+                        <li>Premium website tools</li>
+                    </div>
+                </ul>
+            </div>
+            <div id="shadow-box">
+                <h3>
+                    Premium
+                </h3>
+                <ul id="lister">
+                    <div id="list">
+                        <li>Full membership access</li>
+                        <li>Gold perks</li>
+                        <li>24/7 phone services</li>
+                        <li>Meet the brokers personally</li>
+                        <li>Matthew Mcconaughey's signature</li>
+                        <li>everything from bundled</li>
+                        <li>premium investing strategies</li>
+                        <li>porfolio increase in value guarantee</li>
+                    </div>
+                    
+                </ul>
+
+            </div>
         </div>
 
         <div>
-            <form action="/action_page.php">
-                <label for="cars">Choose a car:</label>
+            <form id="user-input" action="/action_page.php">
+                <label for="cars">Choose a plan:</label>
                 <select id="cars" name="cars">
-                  <option value="volvo">Volvo</option>
-                  <option value="saab">Saab</option>
-                  <option value="fiat">Fiat</option>
-                  <option value="audi">Audi</option>
+                  <option value="volvo">Basic</option>
+                  <option value="saab">Bundle</option>
+                  <option value="fiat">Premium</option>
                 </select>
                 <input type="submit">
               </form>
