@@ -9,6 +9,24 @@
 Keep adding some fade in/out effects to css
 Look to adding the marque for the stock market tickers.  */
 
+.container {
+  display: none;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.responder {
+  display: none;
+}
+
 #logo {
   float: left;
   height: 100%;
@@ -164,19 +182,20 @@ a:hover {
     background-position: center;
 }
 .para1 {
-    background-image: url('BakeryBg1.jpg');
+    background-image: url('Images/stock1.jpg');
     min-height: 100%;
 }
 
 .para2 {
-    background-image: url('img2.jpg');
+    background-image: url('Images/stock2.jpg');
     min-height: 100%;
 }
 
 .para3 {
-    background-image: url('img3.jpg');
+    background-image: url('Images/dogecoin.jpg');
     min-height: 100%;
 }
+
 #nav {
     display: inline-flex;
     justify-content: space-between;
@@ -189,8 +208,13 @@ a:hover {
     position: fixed;
     z-index: 500;
 }
+
+
 @media screen and (max-width: 1030px) {
     li {padding-right: 10px;}
+    .responder {display:block;}
+    .list-navs {display:none;}
+
 }
 
 @media screen and (max-width: 903px) {
