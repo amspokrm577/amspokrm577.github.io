@@ -1,9 +1,3 @@
-/* p {
-    background-image: "images/logo.jpg"
-    color: rbg(255, 165, 0);
-
-}; */
-
 
 /* 
 Keep adding some fade in/out effects to css
@@ -59,17 +53,46 @@ Look to adding the marque for the stock market tickers.  */
 
 }
 
-.grid-container {
-    opacity: 0.8;
-    font-size: large;
-    position: sticky;
+#broker-img {
+    width:50%;
+    height:30%;
+    margin: 2em;
+}
 
+.section80 {
+  justify-content: center;
+  margin-left:20%;
+  position: relative;
+  top: 300px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    border: 10px solid black;
+    background-color: #b0f5f5;
+    width: 80%;
+    height: 30%;
+    margin-top: auto;
 };
 
-.grid-item {
-    font-size: medium;
-    display: inline-block;
+h5 {
+  text-align: center;
+}
 
+.grid-item-image {
+    align-items: center;
+    grid-column: 1;
+};
+
+.grid-item-text {
+  margin-top: 30px;
+  align-items: center;
+  grid-column: 1;
+  border: 1em solid gray;
+  text-align: center;
+  
 };
 
 .grid-item:hover {
@@ -118,10 +141,6 @@ a:hover {
 
 }
 
-#color-changer {
-  display: inline-flex;
-};
-
 
 .ele {
     opacity: 1;
@@ -133,6 +152,8 @@ a:hover {
     background-color: black;
     overflow: hidden;
     white-space: wrap;
+    position:fixed;
+    z-index: 1;
   }
   
   #div1 {
